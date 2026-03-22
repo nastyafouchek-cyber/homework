@@ -1,0 +1,123 @@
+.fruit-list {
+    background-color: #eeb0ba;
+    padding: 30px;
+    margin: 50px;
+    width: 400px;
+    list-style-position: inside;
+    color: white;
+    font-family: sans-serif;
+}
+
+.fruit-list li {
+    background-color: #c86b7b;
+    margin-bottom: 10px; 
+    padding: 10px;
+    list-style-type: decimal;
+}
+
+.fruit-list li span {
+    background-color: #8c3a4a;
+    padding: 5px 15px;
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 12px 40px;
+    position: relative;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+
+ul li:nth-child(odd) {
+    background: #add8e6;
+}
+
+ul li:nth-child(even) {
+    background: #b0e0e6;
+}
+
+ul li.checked {
+    background: #d3d3d3;
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li::before {
+    content: '☐';
+    position: absolute;
+    left: 10px;
+}
+
+ul li.checked::before {
+    content: '☑';
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    color: red;
+    cursor: pointer;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+.dictionary-entry {
+    background-color: #fff;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.transcription {
+    color: #666;
+    margin-top: 10px;
+}
+
+dt {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-left: 40px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.example {
+    color: #888;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.synonyms {
+    color: #5d48b3; 
+    font-size: 0.9em;
+}
+
+.synonyms span {
+    color: #888;
+}
