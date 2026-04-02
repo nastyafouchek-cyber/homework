@@ -1,0 +1,107 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.product-list {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px; 
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    width: 300px;
+    background-color: #888;
+}
+
+.menu-item {
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.menu-item span {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #2c4a63;
+    padding: 30px;
+    text-align: center;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    text-align: left;
+}
+
+.col a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.col a:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: right;
+}
+
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    margin-left: 10px;
+    background-size: cover;
+}
+
+.fb:hover { background-image: url(../img/icons/facebook.png); background-color: #3b5998; }
+.ig:hover { background-image: url(../img/icons/instagram.jpg); background-color: #e1306c; }
+.yt:hover { background-image: url(../img/icons/youtube.png); background-color: #ff0000; }
