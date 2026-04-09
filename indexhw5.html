@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+    <style>
+        th {
+            position: sticky;
+            top: 0;
+            background-color: #add8e6;
+        }
+        td:first-child {
+            position: sticky;
+            left: 0;
+            background-color: #add8e6;
+        }
+        th:first-child {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #add8e6;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #eeeeee;
+        }
+        table { border-collapse: separate; border-spacing: 0; }
+        th, td { padding: 10px; border: 1px solid #ccc; }
+        .container { width: 400px; height: 250px; overflow: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>/</th>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Line 1</td><td>23</td><td>123</td><td>43</td><td>12</td><td>76</td></tr>
+            <tr><td>Line 2</td><td>23</td><td>123</td><td>43</td><td>12</td><td>76</td></tr>
+            <tr><td>Line 3</td><td>34</td><td>63</td><td>25</td><td>7</td><td>23</td></tr>
+            <tr><td>Line 4</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr>
+            <tr><td>Line 5</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr>
+            <tr><td>Line 6</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
