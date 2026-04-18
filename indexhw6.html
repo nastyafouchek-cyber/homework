@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+    <style>
+        body { margin: 0; padding-left: 70px; font-family: sans-serif; }
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 100vh;
+            background-color: #888;
+            overflow: hidden;
+            transition: width 1s ease;
+            white-space: nowrap;
+        }
+        .menu:hover {
+            width: 200px; 
+        }
+        .menu-item {
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .menu-item:hover {
+            background-color: #555;
+        }
+        .menu-item img {
+            width: 30px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .menu-item span {
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 50px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .plan {
+            width: 200px;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            transition: transform 1s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .plan:hover {
+            transform: scale(1.15);
+            z-index: 10;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .buy-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task 2</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="../img/pencil.png" alt="Edit">
+            <span>EDIT</span>
+        </div>
+        <div class="menu-item">
+            <img src="../img/heart.png" alt="Favorites">
+            <span>FAVORITES</span>
+        </div>
+        <div class="menu-item">
+            <img src="../img/time.png" alt="History">
+            <span>HISTORY</span>
+        </div>
+        <div class="menu-item">
+            <img src="../img/security.png" alt="Security">
+            <span>SECURITY</span>
+        </div>
+        <div class="menu-item">
+            <img src="../img/settings.png" alt="Settings">
+            <span>SETTINGS</span>
+        </div>
+    </div>
+
+    <div style="padding: 20px;">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
+        </div>
+
+    <h2>Task 3</h2>
+<div class="container">
+    <div class="plan">
+        <h3>ENTERPRISE</h3>
+        <p>$69 / month</p>
+        <button class="buy-btn">BUY</button>
+    </div>
+    <div class="plan">
+        <h3>PROFESSIONAL</h3>
+        <p>$29 / month</p>
+        <button class="buy-btn">BUY</button>
+    </div>
+    <div class="plan">
+        <h3>STANDART</h3>
+        <p>$19 / month</p>
+        <button class="buy-btn">BUY</button>
+    </div>
+    <div class="plan">
+        <h3>BASIC</h3>
+        <p>$9 / month</p>
+        <button class="buy-btn">BUY</button>
+    </div>
+</div>
+</body>
+</html>
