@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: sans-serif; background: #141414; color: white; }
+        
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 30px; 
+            background: #000; 
+        }
+        nav { display: flex; gap: 15px; }
+        nav a { color: white; text-decoration: none; font-size: 14px; }
+
+        .wrapper { display: flex; flex-wrap: wrap; }
+
+        aside { 
+            flex: 1 1 200px; 
+            background: #181818; 
+            padding: 20px; 
+            min-height: calc(100vh - 60px); 
+        }
+        aside ul { list-style: none; display: flex; flex-direction: column; gap: 15px; }
+
+        main { flex: 4 1 600px; padding: 20px; }
+        .grid { display: flex; flex-wrap: wrap; gap: 15px; }
+
+        .card { 
+            flex: 1 1 calc(25% - 15px);
+            min-width: 300px; 
+            height: 200px; 
+            background: #333; 
+            border-radius: 8px; 
+            overflow: hidden;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .card:hover { transform: scale(1.05); }
+
+        .card img {
+            width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 20% 25%;
+        display: block;
+        }
+
+        .featured { 
+            flex: 2 1 calc(80% - 15px); 
+            height: 300px;
+            object-position: center 20%;
+            object-fit: contain;}
+        .full-row { flex: 1 1 100%; }
+
+        @media (max-width: 768px) {
+            aside { flex: 1 1 100%; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div><strong>STREAM-UA</strong></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <aside>
+            <ul>
+                <li>🔥 Popular</li>
+                <li>📁 Library</li>
+                <li>⚙️ Settings</li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="grid">
+                <div class="card featured">
+                    <img src="../img/net.jpg" alt="Featured">
+                </div>
+                <div class="card">
+                    <img src="../img/stranger things.jpg" alt="Movie">
+                </div>
+                <div class="card">
+                    <img src="../img/toothless.jpg" alt="Movie">
+                </div>
+                <div class="card">
+                    <img src="../img/damsel.jpg" alt="Movie">
+                </div>
+                <div class="card">
+                    <img src="../img/enola.jpg" alt="Movie">
+                </div>
+                <div class="card">
+                    <img src="../img/scream.jpg" alt="Movie">
+                </div>
+                <div class="card full-row">
+                    <img src="../img/mammamia.jpg" alt="Wide">
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
