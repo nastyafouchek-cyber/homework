@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "sidebar cards"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto auto;
+        }
+
+        .header {
+            grid-area: header;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            font-size: 2.5rem; 
+            font-weight: bold;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #34495e;
+            color: white;
+            padding: 15px;
+        }
+
+        .cards {
+            grid-area: cards;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            Medical Center
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>Doctors</li>
+                    <li>Patients</li>
+                    <li>Appointments</li>
+                    <li>Laboratory</li>
+                    <li>Settings</li>
+                </ul>
+            </nav>
+        </aside>
+        
+       <main class="main">
+            <h1>Welcome to the #1 Clinic in the Region</h1>
+            <p>Our medical center provides world-class healthcare services using the latest technologies. We take pride in our team of highly qualified specialists who are dedicated to your well-being. From preventive care to complex surgeries, we are here to support your health journey every step of the way.</p>
+        </main>
+        
+        <section class="cards">
+            <div class="card">
+                <h3>Statistics</h3>
+                <p>Over 10,000 successful surgeries performed this year.</p>
+            </div>
+            <div class="card" style="grid-column: span 2; background: #e3f2fd; border: 1px solid #bbdefb;">
+                <h3>Emergency Alert</h3>
+                <p>All emergency departments are currently operating at full capacity. Please use the online booking system for non-urgent consultations to save time.</p>
+            </div>
+            <div class="card">
+                <h3>New Equipment</h3>
+                <p>We've just installed a new MRI machine with AI diagnostic features.</p>
+            </div>
+            <div class="card">
+                <h3>Pharmacy</h3>
+                <p>Check the availability of prescribed medications in our internal database.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            2026 Global Health Clinic.
+        </footer>
+    </div>
+
+        <footer class="footer">© 2026 Hospital Clinic</footer>
+    </div>
+
+</body>
+</html>
