@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f0f0; display: flex; justify-content: center; padding: 20px; }
+        
+        .form-container { 
+            background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%; max-width: 900px;
+        }
+
+        .grid-main { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 40px; 
+        }
+        .grid-row { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; }
+
+
+        h2 { 
+            font-weight: normal; 
+            margin-bottom: 25px; 
+        }
+        .input-group { 
+            border-bottom: 1px solid #ccc; 
+            margin-bottom: 20px; 
+            padding: 5px 0; 
+        }
+        input, select { border: none; outline: none; width: 100%; padding: 8px; }
+        
+        .checkbox-group { 
+            margin-top: 20px; 
+            font-size: 14px; 
+            color: #666; 
+        }
+        .footer { 
+            display: flex; 
+            justify-content: flex-end; 
+            margin-top: 20px; border-top: 1px solid #eee; 
+            padding-top: 20px; }
+        
+        button { 
+            background: #008080; 
+            color: white; 
+            border: none;
+             padding: 10px 30px; 
+             cursor: pointer; 
+             border-radius: 4px; 
+            }
+
+        @media (max-width: 900px) {
+            .grid-main { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .grid-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <form class="form-container">
+    <div class="grid-main">
+        <div>
+            <h2>Registration form</h2>
+            <div class="input-group"><input type="text" placeholder="Username"></div>
+            <div class="input-group"><input type="email" placeholder="Email address"></div>
+            <div class="grid-row">
+                <div class="input-group"><input type="password" placeholder="Password"></div>
+                <div class="input-group"><input type="password" placeholder="Confirm password"></div>
+            </div>
+            
+            <div class="checkbox-group">
+                <label><input type="checkbox"> I want to receive news and special offers</label><br>
+                <label><input type="checkbox"> I agree with the Terms and Conditions</label>
+            </div>
+        </div>
+
+        <div>
+            <h2>Personal details</h2>
+            <div class="grid-row">
+                <div class="input-group"><input type="text" placeholder="First name"></div>
+                <div class="input-group"><input type="text" placeholder="Last name"></div>
+            </div>
+            <div class="grid-row">
+                <div class="input-group">
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="input-group"><input type="text" placeholder="mm/dd/yyyy"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button type="submit">SUBMIT</button>
+    </div>
+</form>
+</body>
+</html>

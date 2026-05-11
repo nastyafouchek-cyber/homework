@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 40px;
+            background-color: white; /* Чистий білий фон */
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        .section {
+            margin-bottom: 40px; /* Відступи між секціями, щоб не злипалися */
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 20px;
+            color: black;
+        }
+
+        /* 2. СТИЛІ ЕЛЕМЕНТІВ (БІБЛІОТЕКА) */
+
+        /* Інпути */
+        .lib-input {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        .valid { border: 2px solid #4CAF50; }
+        .invalid { border: 2px solid #f44336; }
+
+        /* Кнопки */
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-green { background-color: #4CAF50; }
+        .btn-green:hover { background-color: #095d0d; }
+        
+        .btn-red { background-color: #f44336; }
+        .btn-red:hover { background-color: #761010; }
+        
+        .btn-disabled { background-color: #9e9e9e; cursor: not-allowed; }
+
+        /* Круглі кнопки */
+        .btn-round {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Textarea */
+        .lib-textarea {
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+
+    <div class="section">
+        <h3>Inputs</h3>
+        <div class="row">
+            <input type="text" class="lib-input" placeholder="Enter some text">
+            <input type="text" class="lib-input valid" value="valid text">
+            <input type="text" class="lib-input invalid" value="invalid text">
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Check boxes</h3>
+        <div class="row">
+            <label><input type="checkbox" checked> Subscribe</label>
+            <label><input type="checkbox"> Subscribe</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Radio buttons</h3>
+        <div class="row">
+            <label>Gender:</label>
+            <label><input type="radio" name="g" checked> Male</label>
+            <label><input type="radio" name="g"> Female</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Buttons</h3>
+        <div class="row">
+            <button class="btn btn-green">Active</button>
+            <button class="btn btn-green">Hover</button>
+            <button class="btn btn-red">Danger</button>
+            <button class="btn btn-red">Hover</button>
+            <button class="btn btn-disabled" disabled>Disabled</button>
+            <button class="btn btn-green btn-round">+</button>
+            <button class="btn btn-red btn-round">-</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Text area</h3>
+        <textarea class="lib-textarea" placeholder="Enter some text..."></textarea>
+    </div>
+
+</div>
+</body>
+</html>
