@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+    <link rel="stylesheet" href="stylehw12.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Travel Booking Form</h1>
+        <form action="#">
+            
+            <fieldset>
+                <legend>1. Personal Data</legend>
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone number" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Destination</legend>
+                <select id="destination" name="destination">
+                    <option value="paris">Paris</option>
+                    <option value="rome">Rome</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="newyork">New York</option>
+                    <option value="barcelona">Barcelona</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Travel Dates</legend>
+                <label>Departure date: <input type="date"></label>
+                <label>Return date: <input type="date"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Accommodation Type</legend>
+                <label><input type="radio" name="stay" value="hotel"> Hotel</label>
+                <label><input type="radio" name="stay" value="apartment"> Apartment</label>
+                <label><input type="radio" name="stay" value="hostel"> Hostel</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Additional Services</legend>
+                <label><input type="checkbox"> Breakfast</label>
+                <label><input type="checkbox"> Airport transfer</label>
+                <label><input type="checkbox"> Interpreter guide</label>
+                <label><input type="checkbox"> Travel insurance</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. Comments</legend>
+                <textarea placeholder="Special requests..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. Payment Method</legend>
+                <label><input type="radio" name="pay" value="card"> Card</label>
+                <label><input type="radio" name="pay" value="cash"> Cash</label>
+                <label><input type="radio" name="pay" value="paypal"> PayPal</label>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit" class="btn-book">Book now</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
